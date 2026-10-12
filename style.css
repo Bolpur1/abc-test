@@ -1288,103 +1288,79 @@ code {
 
 
 
-/* =========================================
-   BHUMI BANDHU - FOOTER SOCIAL ICONS
-   Footer layout remains unchanged
-   ========================================= */
+/* ==============================
+   FOOTER SOCIAL MEDIA ICONS
+   ============================== */
 
-footer .footer-grid > div:first-child .social-links {
-    display: flex !important;
-    flex-direction: row !important;
-    flex-wrap: nowrap !important;
+.social-links {
+    display: flex;
     align-items: center;
-    justify-content: flex-start;
-    gap: 10px;
-    width: 100%;
-    margin-top: 16px;
-    padding: 0;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
 }
 
-footer .footer-grid > div:first-child .social-links a.social-icon {
-    display: inline-flex !important;
-    flex: 0 0 40px !important;
-    width: 40px !important;
-    min-width: 40px;
-    max-width: 40px;
-    height: 40px !important;
-    min-height: 40px;
-    box-sizing: border-box;
+.social-icon {
+    width: 42px;
+    height: 42px;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 0 !important;
-    margin: 0 !important;
-    border: 1px solid #dce7e4;
     border-radius: 50%;
-    background-color: #ffffff;
+    background: #ffffff;
     color: #0f3d3e;
+    border: 1px solid rgba(15, 61, 62, 0.15);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
     text-decoration: none;
-    line-height: 1;
-    box-shadow: none;
-    transition: background-color 0.2s ease,
-                color 0.2s ease,
-                transform 0.2s ease;
+    transition:
+        transform 0.25s ease,
+        color 0.25s ease,
+        background 0.25s ease,
+        box-shadow 0.25s ease;
 }
 
-footer .footer-grid > div:first-child .social-links a.social-icon svg {
+.social-icon svg {
+    width: 21px;
+    height: 21px;
     display: block;
-    width: 20px !important;
-    height: 20px !important;
-    flex: 0 0 20px;
-    margin: 0;
-    padding: 0;
     fill: currentColor;
 }
 
-footer .footer-grid > div:first-child .social-links a.facebook:hover {
-    background-color: #1877f2;
-    border-color: #1877f2;
+.social-icon:hover {
+    transform: translateY(-4px);
     color: #ffffff;
+    box-shadow: 0 7px 16px rgba(0, 0, 0, 0.16);
 }
 
-footer .footer-grid > div:first-child .social-links a.instagram:hover {
-    background-color: #d62976;
-    border-color: #d62976;
-    color: #ffffff;
+.social-icon:focus-visible {
+    outline: 3px solid #e9b949;
+    outline-offset: 4px;
 }
 
-footer .footer-grid > div:first-child .social-links a.youtube:hover {
-    background-color: #ff0000;
-    border-color: #ff0000;
-    color: #ffffff;
+.social-icon.facebook:hover {
+    background: #1877f2;
 }
 
-footer .footer-grid > div:first-child .social-links a.whatsapp:hover {
-    background-color: #25d366;
-    border-color: #25d366;
-    color: #ffffff;
+.social-icon.instagram:hover {
+    background: #d62976;
 }
 
-footer .footer-grid > div:first-child .social-links a.social-icon:hover {
-    transform: translateY(-2px);
+.social-icon.youtube:hover {
+    background: #ff0000;
 }
 
-footer .footer-grid > div:first-child .social-links a.social-icon:focus-visible {
-    outline: 2px solid #e9b949;
-    outline-offset: 3px;
+.social-icon.whatsapp:hover {
+    background: #25d366;
 }
 
-/* Very narrow screens */
-@media (max-width: 360px) {
-    footer .footer-grid > div:first-child .social-links {
-        gap: 7px;
+@media (max-width: 600px) {
+    .social-links {
+        gap: 10px;
+        margin-top: 16px;
     }
 
-    footer .footer-grid > div:first-child .social-links a.social-icon {
-        flex-basis: 36px !important;
-        width: 36px !important;
-        min-width: 36px;
-        max-width: 36px;
-        height: 36px !important;
-        min-height: 36px;
+    .social-icon {
+        width: 40px;
+        height: 40px;
     }
 }
