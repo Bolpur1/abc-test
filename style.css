@@ -1285,97 +1285,106 @@ code {
         font-size: 14px;
     }
     
+
+
+
 /* =========================================
-   BHUMI BANDHU SOCIAL MEDIA ICONS
+   BHUMI BANDHU - FOOTER SOCIAL ICONS
+   Footer layout remains unchanged
    ========================================= */
 
-.social-media {
-    margin-top: 24px;
-}
-
-.social-media h4 {
-    margin: 0 0 14px;
-    color: #ffffff;
-    font-size: 15px;
-    font-weight: 700;
-}
-
-.social-icons {
-    display: flex;
+footer .footer-grid > div:first-child .social-links {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 12px;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 100%;
+    margin-top: 16px;
+    padding: 0;
 }
 
-.social-icon {
-    width: 44px;
-    height: 44px;
-    display: inline-flex;
+footer .footer-grid > div:first-child .social-links a.social-icon {
+    display: inline-flex !important;
+    flex: 0 0 40px !important;
+    width: 40px !important;
+    min-width: 40px;
+    max-width: 40px;
+    height: 40px !important;
+    min-height: 40px;
+    box-sizing: border-box;
     align-items: center;
     justify-content: center;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: 1px solid #dce7e4;
     border-radius: 50%;
-    color: #ffffff;
-    background: rgba(255, 255, 255, 0.10);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    transition:
-        transform 0.25s ease,
-        background 0.25s ease,
-        box-shadow 0.25s ease;
+    background-color: #ffffff;
+    color: #0f3d3e;
+    text-decoration: none;
+    line-height: 1;
+    box-shadow: none;
+    transition: background-color 0.2s ease,
+                color 0.2s ease,
+                transform 0.2s ease;
 }
 
-.social-icon svg {
-    width: 22px;
-    height: 22px;
+footer .footer-grid > div:first-child .social-links a.social-icon svg {
     display: block;
+    width: 20px !important;
+    height: 20px !important;
+    flex: 0 0 20px;
+    margin: 0;
+    padding: 0;
+    fill: currentColor;
 }
 
-.social-icon:hover,
-.social-icon:focus-visible {
+footer .footer-grid > div:first-child .social-links a.facebook:hover {
+    background-color: #1877f2;
+    border-color: #1877f2;
     color: #ffffff;
-    transform: translateY(-5px);
-    outline: none;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.22);
 }
 
-.social-icon.facebook:hover {
-    background: #1877F2;
+footer .footer-grid > div:first-child .social-links a.instagram:hover {
+    background-color: #d62976;
+    border-color: #d62976;
+    color: #ffffff;
 }
 
-.social-icon.instagram:hover {
-    background: linear-gradient(
-        45deg,
-        #feda75,
-        #fa7e1e,
-        #d62976,
-        #962fbf,
-        #4f5bd5
-    );
+footer .footer-grid > div:first-child .social-links a.youtube:hover {
+    background-color: #ff0000;
+    border-color: #ff0000;
+    color: #ffffff;
 }
 
-.social-icon.youtube:hover {
-    background: #FF0000;
+footer .footer-grid > div:first-child .social-links a.whatsapp:hover {
+    background-color: #25d366;
+    border-color: #25d366;
+    color: #ffffff;
 }
 
-.social-icon.whatsapp:hover {
-    background: #25D366;
+footer .footer-grid > div:first-child .social-links a.social-icon:hover {
+    transform: translateY(-2px);
 }
 
-/* Keyboard accessibility */
-.social-icon:focus-visible {
-    outline: 3px solid #8fe05e;
-    outline-offset: 4px;
+footer .footer-grid > div:first-child .social-links a.social-icon:focus-visible {
+    outline: 2px solid #e9b949;
+    outline-offset: 3px;
 }
 
-/* Mobile */
-@media (max-width: 700px) {
-    .social-media {
-        margin-top: 20px;
+/* Very narrow screens */
+@media (max-width: 360px) {
+    footer .footer-grid > div:first-child .social-links {
+        gap: 7px;
     }
 
-    .social-icon {
-        width: 46px;
-        height: 46px;
+    footer .footer-grid > div:first-child .social-links a.social-icon {
+        flex-basis: 36px !important;
+        width: 36px !important;
+        min-width: 36px;
+        max-width: 36px;
+        height: 36px !important;
+        min-height: 36px;
     }
-}
-
 }
